@@ -1,0 +1,35 @@
+products:
+    css: 'div.cPHDOP:nth-of-type(n+4) div.tUxRFH'
+    xpath: null
+    multiple: true
+    type: Text
+    children:
+        title:
+            css: div.KzDlHZ
+            xpath: null
+            multiple: true
+            type: Text
+        rating:
+            css: div.XQDdHH
+            xpath: null
+            multiple: true
+            type: Text
+        discount_price:
+            css: div.Nx9bqj
+            xpath: null
+            multiple: true
+            type: Text
+        og_price:
+            css: div.yRaY8j.ZYYwLA
+            xpath: null
+            multiple: true
+            type: Text
+        image:
+            css: img.DByuf4
+            xpath: null
+            multiple: true
+            type: Image
+        url:
+            xpath: ""
+            multiple: true
+            type: Link

@@ -32,11 +32,12 @@ const renderCards = (data) => {
     } else if (json.Type === "products") {
       return (
         <div className="card-container">
-          <BackgroundGradientDemo />
-          {/* {json.Fields.map((item, index) => (
-            // <Card key={index} item={item} />
+          
+          {json.Fields.map((item, index) => (
+
+            <Card key={index} item={item} />
             // <CardDemo />
-          ))} */}
+          ))}
         </div>
       );
     } else {
