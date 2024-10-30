@@ -1,0 +1,10 @@
+.footer-main {
+    border: 2px solid blue;
+    height: 10vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: black;
+    color: white;
+    z-index: 4;
+}

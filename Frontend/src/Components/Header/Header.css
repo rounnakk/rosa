@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
+
+.main{
+/* overflow: hidden; */
+  position: fixed;
+  display: flex;
+  align-items: center;
+  padding: 1% 2%;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+.title{
+  font-family: "Yantramanav", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  /* color: black; */
+  text-decoration: none;
+  font-size: 1.8em;
+  /* margin-left: 70px; */
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.visiblee{
+    opacity: 1;
+}
+
+.logosvg {
+    width: auto;
+    height: 3em;
+    opacity: 0;
+}
+
+.logo {
+    /* position:relative; */
+    width: 40%;
+    z-index: 106;
+}
+
+.logowrapper{
+    display: flex;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    left: 0;
+    z-index: 103;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.shrink {
+    animation: moveAndShrink 2.5s ease forwards;
+    
+  }
+  
+  
+  @keyframes moveAndShrink {
+    0% {
+      transform: translate(0, 0) scale(1);
+    }
+    50% {
+      transform: translate(0, 0) scale(0.5) ;
+    }
+    100% {
+      transform: translate(0, calc(-50vh + 38px)) scale(0.1) rotate(360deg);
+    }
+  }
+
+
+  @media(max-width: 490px) {
+    .logo{
+      width: 100%;
+    }
+    .title {
+      display: none;
+    }
+    .shrink {
+      margin-top: 10%;
+    }
+    @keyframes moveAndShrink {
+      0% {
+        transform: translate(0%, -5%) scale(1);
+      }
+      50% {
+        transform: translate(0%, -5%) scale(0.5) ;
+      }
+      100% {
+        transform: translate(0, calc(-50vh + 38px)) scale(0.3) rotate(360deg);
+      }
+    }
+  }

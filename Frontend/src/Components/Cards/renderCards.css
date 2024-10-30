@@ -1,0 +1,42 @@
+.card-container{
+    width: 100%;
+    overflow-x: scroll;
+    display: flex;
+}
+
+.card {
+    height: 85%;
+    width: 13em;
+    margin: 20px;
+    border: 1px solid grey;
+    border-radius: 25px;
+    padding: 2%;
+}
+
+.card a img {
+    border-radius: 3px;
+}
+
+
+.card-container::-webkit-scrollbar {
+    display: none;
+    /* position: absolute; */
+    /* right: 0; */
+    width: 6.5px; /* width of the scrollbar */
+}
+
+/* Handle (thumb) */
+.card-container::-webkit-scrollbar-thumb {
+    background-color: #b5b5b5; /* color of the thumb */
+    border-radius: 20px; /* roundness of the thumb */
+}
+
+/* Handle on hover */
+.card-container::-webkit-scrollbar-thumb:hover {
+    background-color: #818181; /* darker color when hovered */
+}
+
+/* Track (the area on which the thumb moves) */
+.card-container::-webkit-scrollbar-track {
+    background: #ffffff; /* color of the track */
+}

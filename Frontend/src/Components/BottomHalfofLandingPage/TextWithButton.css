@@ -1,0 +1,42 @@
+.text-with-button {
+  height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    width: 40%;
+    justify-content: center;
+    align-items: flex-start;
+    /* padding: 20px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* text-align: left; */
+    z-index: 6;  
+  }
+  
+  .text-with-button h2 {
+    margin: 0;
+    color: rgb(224, 224, 224);
+    font-size: 5em;
+    line-height: 1.3;
+    font-weight: 600;
+  }
+  
+  .text-with-button p {
+    margin-top:1rem;
+    margin-bottom: 1.5rem;
+    color: rgb(150, 150, 150);
+    font-size: 1.5em;
+  }
+
+  @media(max-width: 490px) {
+    .text-with-button{
+      width: 100%;
+      align-items: center;
+    }
+    .text-with-button h2 {
+      font-size: 2.1em;
+    }
+    .text-with-button p {
+      font-size: 1em;
+    }
+  }

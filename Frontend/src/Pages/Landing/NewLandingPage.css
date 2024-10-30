@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.grid-check {
+    position: fixed;
+    height: 350vh;
+    width: 100%;
+    opacity: 0.3;
+    z-index: 3;
+    /* background-color: #000; Black background */
+    background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px; /* Size of the grid cells */
+}
+
+.landing-main h2 {
+    z-index: 2;
+    font-family: 'Poppins', sans-serif;
+    font-size: 7em;
+    font-weight: 600;
+    background: linear-gradient(180deg, #595959, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.container-class{
+    height: 95vh;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+}
+
+.landing-main h4 {
+    z-index: 2;
+    font-family: 'Poppins', sans-serif;
+    font-size: 5em;
+    background: linear-gradient(180deg, #595959, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.sitare{
+    position: absolute;
+    top: 0;
+    /* opacity: 0; */
+    left: 0;
+    height: 130vh;
+    width: 100%;
+    z-index: 1;
+    transform: translateY(30px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  .background-container{
+    position: absolute;
+    overflow-x: hidden;
+    z-index: 0;
+    height: 350vh;
+    background: #0C0C0C;
+    
+    width: 100%;
+    display: grid;
+    min-height: 100vh;
+    place-content: center;
+    overflow: hidden;
+    /* background: hsla(0, 0%, 100%, 1);
+
+    background: linear-gradient(90deg, hsla(0, 0%, 100%, 1) 0%, hsla(212, 100%, 93%, 1) 50%, hsla(0, 0%, 100%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(0, 0%, 100%, 1) 0%, hsla(212, 100%, 93%, 1) 50%, hsla(0, 0%, 100%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(0, 0%, 100%, 1) 0%, hsla(212, 100%, 93%, 1) 50%, hsla(0, 0%, 100%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#DDEDFF", GradientType=1 ); */
+
+    /* background: hsla(212, 100%, 93%, 1);
+
+    background: linear-gradient(90deg, hsla(212, 100%, 93%, 1) 0%, hsla(0, 0%, 100%, 1) 50%, hsla(212, 100%, 93%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(212, 100%, 93%, 1) 0%, hsla(0, 0%, 100%, 1) 50%, hsla(212, 100%, 93%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(212, 100%, 93%, 1) 0%, hsla(0, 0%, 100%, 1) 50%, hsla(212, 100%, 93%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#DDEDFF", endColorstr="#FFFFFF", GradientType=1 );
+ */
+ /* background: hsla(212, 100%, 93%, 1);
+
+ background: linear-gradient(90deg, hsla(212, 100%, 93%, 1) 0%, hsla(0, 0%, 100%, 1) 50%, hsla(0, 0%, 100%, 1) 100%);
+ 
+ background: -moz-linear-gradient(90deg, hsla(212, 100%, 93%, 1) 0%, hsla(0, 0%, 100%, 1) 50%, hsla(0, 0%, 100%, 1) 100%);
+ 
+ background: -webkit-linear-gradient(90deg, hsla(212, 100%, 93%, 1) 0%, hsla(0, 0%, 100%, 1) 50%, hsla(0, 0%, 100%, 1) 100%);
+ 
+ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#DDEDFF", endColorstr="#FFFFFF", GradientType=1 ); */
+
+
+ /* background: hsla(0, 0%, 86%, 1);
+
+ background: linear-gradient(90deg, hsla(0, 0%, 86%, 1) 0%, hsla(0, 0%, 100%, 1) 58%, hsla(0, 0%, 100%, 1) 100%);
+ 
+ background: -moz-linear-gradient(90deg, hsla(0, 0%, 86%, 1) 0%, hsla(0, 0%, 100%, 1) 58%, hsla(0, 0%, 100%, 1) 100%);
+ 
+ background: -webkit-linear-gradient(90deg, hsla(0, 0%, 86%, 1) 0%, hsla(0, 0%, 100%, 1) 58%, hsla(0, 0%, 100%, 1) 100%);
+ 
+ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#DCDCDC", endColorstr="#FFFFFF", GradientType=1 );
+ */
+ /* background: hsla(0, 0%, 5%, 1);
+
+ background: linear-gradient(270deg, hsla(0, 0%, 5%, 1) 0%, hsla(0, 0%, 17%, 1) 47%, hsla(0, 0%, 17%, 1) 51%, hsla(0, 0%, 5%, 1) 100%);
+ 
+ background: -moz-linear-gradient(270deg, hsla(0, 0%, 5%, 1) 0%, hsla(0, 0%, 17%, 1) 47%, hsla(0, 0%, 17%, 1) 51%, hsla(0, 0%, 5%, 1) 100%);
+ 
+ background: -webkit-linear-gradient(270deg, hsla(0, 0%, 5%, 1) 0%, hsla(0, 0%, 17%, 1) 47%, hsla(0, 0%, 17%, 1) 51%, hsla(0, 0%, 5%, 1) 100%);
+ 
+ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0C0C0C", endColorstr="#2C2C2C", GradientType=1 ); */
+
+}
+
+
+.ipad {
+    opacity: 0;
+}
+
+.ipad.show {
+    opacity: 1;
+    animation: appear 1.5s ease;
+}
+
+@keyframes appear {
+    0%{
+        transform: scale(1.2) perspective(1000px) rotateX(15deg) translateY(90vh) ;
+    }
+    100% {
+        transform:scale(1.1) perspective(1000px) rotateX(20deg) translateY(70vh) ;
+    }
+}
+.iphone.show {
+    opacity: 1;
+    animation: appear 1.5s ease;
+}
+
+@keyframes appear {
+    0%{
+        transform: scale(1.2) perspective(1000px) rotateX(15deg) translateY(90vh) ;
+    }
+    100% {
+        transform:scale(1.1) perspective(1000px) rotateX(20deg) translateY(70vh) ;
+    }
+}
+
+.iphone {
+    opacity: 0;
+    display: none;
+}
+
+.ipad{
+    display: block;
+}
+
+@media(max-width: 490px) {
+    .ipad {
+        display: none;
+    }
+    .iphone{
+        display: block;
+    }
+  }
