@@ -1,0 +1,2 @@
+# Mark all files as linquist-unvendored to be considered into language statistics
+** linguist-vendored=false
