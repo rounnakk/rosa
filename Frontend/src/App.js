@@ -7,6 +7,10 @@ import ChatBox from './Pages/Chat/Chatbox';
 import {createBrowserRouter,RouterProvider} from 'react-router-dom'
 import NewLandingPage from './Pages/Landing/NewLandingPage';
 // import LogoAnimation from './Components/LogoAnimation';
+import Iphone from './Pages/Model/Iphone';
+// import Imodel from './Pages/Model/Claude';
+import { Model } from './Components/Iphone';
+
 
 function App() {
 
@@ -18,6 +22,11 @@ function App() {
     {
       path: "/chat",
       element: <ChatBox />
+    },
+    {
+      path: "/model",
+      element: <Iphone />
+      // element: <Imodel />
     }
   ])
 
@@ -29,3 +38,5 @@ function App() {
 }
 
 export default App;
+
+
