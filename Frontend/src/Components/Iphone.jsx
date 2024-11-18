@@ -29,10 +29,16 @@ export function Model(props) {
           <mesh geometry={nodes.Body_Lens_0.geometry} material={materials.Lens} />
           <mesh geometry={nodes.Body_Material_0.geometry} material={materials.Material} />
           <mesh geometry={nodes.Camera_Body_0.geometry} material={materials.Body} />
-          <mesh geometry={nodes.Camera_Glass_0.geometry} material={materials.Glass} />
+          <mesh geometry={nodes.Camera_Glass_0.geometry} material={materials.Glass} >
+          <meshStandardMaterial
+        envMapIntensity={1} // Enhances reflections from the environment
+        metalness={1}       // Makes it more metallic
+        roughness={0.1}     // Controls surface roughness; lower means more reflective
+      />
+          </mesh>
           <mesh geometry={nodes.Camera_Camera_Frame001_0.geometry} material={materials['Camera_Frame.001']} />
           <mesh geometry={nodes.Camera_Mic_0.geometry} material={materials.material} />
-          <mesh geometry={nodes.Body001_Screen_Glass_0.geometry} material={materials.Screen_Glass} />
+          <mesh geometry={nodes.Body001_Screen_Glass_0.geometry} material={materials.Screen_Glass}  />
           <mesh geometry={nodes.Button_Frame_0.geometry} material={materials.Frame} />
           <mesh geometry={nodes.Circle003_Frame_0.geometry} material={materials.Frame} />
           <mesh geometry={nodes.Apple_Logo_Logo_0.geometry} material={materials.Logo} />
